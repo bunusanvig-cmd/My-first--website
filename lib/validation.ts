@@ -6,7 +6,7 @@ export const contactSchema = z.object({
   phone: z.string().min(7, "Phone is required"),
   subject: z.string().min(3, "Subject is required"),
   message: z.string().min(10, "Message should be a little longer"),
-  honeypot: z.string().max(0).optional().default(""),
+  honeypot: z.string().max(0).default(""),
 });
 
 export const consultationSchema = z.object({
@@ -19,10 +19,10 @@ export const consultationSchema = z.object({
   businessGoal: z.string().min(8, "Please add your business goal"),
   budget: z.string().min(1, "Please share your budget"),
   message: z.string().min(10, "Message should be a little longer"),
-  honeypot: z.string().max(0).optional().default(""),
+  honeypot: z.string().max(0).default(""),
 });
 
 export const newsletterSchema = z.object({
   email: z.string().email("Please enter a valid email"),
-  honeypot: z.string().max(0).optional().default(""),
+  honeypot: z.string().max(0).default(""),
 });
