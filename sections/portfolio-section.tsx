@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Section } from "@/components/site/section";
 import { Heading } from "@/components/site/heading";
 import { ProjectCard } from "@/components/content/project-card";
@@ -26,4 +25,3 @@ export function PortfolioSection() {
     </Section>
   );
 }
-

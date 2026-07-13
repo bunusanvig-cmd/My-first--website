@@ -32,7 +32,7 @@ const sharedClasses =
 
 export function Button(props: ButtonProps | LinkProps) {
   if ("href" in props) {
-    const { href, variant = "primary", className, children, ...anchorProps } = props;
+    const { href, variant = "primary", className, children, ...anchorProps } = props as LinkProps;
     const classes = cn(sharedClasses, styles[variant], className);
 
     return (
@@ -42,11 +42,12 @@ export function Button(props: ButtonProps | LinkProps) {
     );
   }
 
-  const { variant = "primary", className, children, ...buttonProps } = props;
+  const { variant = "primary", className, children, ...buttonProps } = props as ButtonProps;
   const classes = cn(sharedClasses, styles[variant], className);
+  const safeButtonProps = buttonProps as ButtonHTMLAttributes<HTMLButtonElement>;
 
   return (
-    <button className={classes} {...buttonProps}>
+    <button className={classes} {...safeButtonProps}>
       {children}
     </button>
   );

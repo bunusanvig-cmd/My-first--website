@@ -35,9 +35,8 @@ export function ProjectCard({
         ))}
       </div>
       <blockquote className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm leading-7 text-white/70">
-      &ldquo;{project.testimonial}&rdquo;
+        &ldquo;{project.testimonial}&rdquo;
       </blockquote>
     </Card>
   );
 }
-

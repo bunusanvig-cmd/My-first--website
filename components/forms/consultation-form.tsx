@@ -174,7 +174,7 @@ function Field({
   label: string;
   error?: string;
   multiline?: boolean;
-  placeholder: string;
+  placeholder?: string;
   type?: string;
 } & UseFormRegisterReturn) {
   return (

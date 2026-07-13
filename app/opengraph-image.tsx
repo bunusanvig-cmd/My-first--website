@@ -24,7 +24,7 @@ export default function OpenGraphImage() {
         <div style={{ fontSize: 24, letterSpacing: "0.28em", textTransform: "uppercase", color: "#8efcff" }}>
           Digital DK
         </div>
-        <div style={{ maxWidth: 860 }}>
+        <div style={{ display: "flex", flexDirection: "column", maxWidth: 860 }}>
           <div style={{ fontSize: 70, lineHeight: 1.04, fontWeight: 700 }}>
             AI Marketing Expert & Consultant
           </div>
@@ -41,4 +41,3 @@ export default function OpenGraphImage() {
     size
   );
 }
-

@@ -31,16 +31,18 @@ export function Button(props: ButtonAsButton | ButtonAsLink) {
   );
 
   if ("href" in props) {
-    const linkProps = rest as Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "children" | "href">;
+    const { href, ...linkRest } = props as ButtonAsLink;
+    const linkProps = linkRest as Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "children" | "href">;
     return (
-      <Link className={shared} href={props.href} {...linkProps}>
+      <Link className={shared} href={href} {...linkProps}>
         {children}
       </Link>
     );
   }
 
+  const buttonProps = rest as ComponentPropsWithoutRef<"button">;
   return (
-    <button className={shared} {...rest}>
+    <button className={shared} {...buttonProps}>
       {children}
     </button>
   );

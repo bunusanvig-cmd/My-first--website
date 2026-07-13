@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ArrowRight, BadgeCheck, BrainCircuit, Code2, Sparkles, Workflow } from "lucide-react";
+import { ArrowRight, BadgeCheck, BrainCircuit, Sparkles, Workflow } from "lucide-react";
 import { Button } from "@/components/button";
 import { Section } from "@/components/section";
 import { getProjectBySlug, portfolio } from "@/data/portfolio";

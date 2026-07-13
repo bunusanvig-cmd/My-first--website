@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Section } from "@/components/site/section";
 import { Heading } from "@/components/site/heading";
 import { Button } from "@/components/ui/button";
@@ -64,4 +63,3 @@ export function AboutPreviewSection() {
     </Section>
   );
 }
-
