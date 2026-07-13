@@ -37,7 +37,7 @@ export function Button(props: ButtonProps | LinkProps) {
     const classes = cn(sharedClasses, styles[variant], className);
 
     return (
-      <Link className={classes} href={href} {...anchorProps}>
+      <Link className={classes} href={href ?? '#'} {...anchorProps}>
         {children}
       </Link>
     );
