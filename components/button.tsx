@@ -11,8 +11,7 @@ type SharedProps = {
 };
 
 type ButtonProps = SharedProps &
-  ButtonHTMLAttributes<HTMLButtonElement> & {
-    href?: never;
+  ButtonHTMLAttributes<HTMLButtonElement>;
   };
 
 type LinkProps = SharedProps &
