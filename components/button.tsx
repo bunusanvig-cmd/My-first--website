@@ -12,7 +12,7 @@ type SharedProps = {
 
 type ButtonProps = SharedProps &
   ButtonHTMLAttributes<HTMLButtonElement>;
-  };
+  
 
 type LinkProps = SharedProps &
   Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "children" | "href"> & {
