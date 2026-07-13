@@ -512,7 +512,7 @@ export default function HomePage() {
                   <Star key={`${item.name}-${index}`} className="h-4 w-4 fill-current" />
                 ))}
               </div>
-              <blockquote className="mt-5 text-sm leading-7 text-white/72">"{item.review}"</blockquote>
+              <blockquote className="mt-5 text-sm leading-7 text-white/72">&ldquo;{item.review}&rdquo;</blockquote>
               <figcaption className="mt-6 border-t border-white/10 pt-4">
                 <div className="font-medium text-white">{item.name}</div>
                 <div className="text-sm text-white/52">{item.company}</div>
